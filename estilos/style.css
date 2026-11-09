@@ -1,0 +1,173 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+background-image: url("../hd-medical-health-icon-with-nurse-v1txjiifhv3bssoo.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;  
+}
+/*Raiz*/
+.contenedor_todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+
+
+}
+/*principal*/
+.caja_trasera{
+width: 100%;
+padding: 100px 20px;
+display: flex;
+justify-content: center;
+backdrop-filter: blur(10px);
+background-color: rgba(0, 128, 255, 0.5)
+}
+
+
+.caja_trasera div{
+    width: 100px 40px;
+    color: white;
+    transition: all 500ms;
+    
+}
+.caja_trasera div h3,p{
+margin:20px ;
+
+}
+/*Boton configuraciones*/ 
+.caja_trasera p,
+.caja_trasera div button{
+    margin-top: 30px;
+}
+.caja_trasera h3{
+font-weight: 400;
+font-size: 26px;
+
+
+}
+/*Boton*/
+.caja_trasera button{
+padding: 10px 40px;
+border: white solid;
+background-color: transparent;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+color: white;
+transition: all 200ms;
+margin: 50px;
+/*pseudo clase (fondo del boton)*/
+}
+.caja_trasera button:hover{
+background-color: white;
+color: black;
+}
+.contenerdor_login_register{
+display: flex;
+align-items: center;
+width: 100%;
+max-width: 380px;
+position: relative;
+top: -218px;
+left: 10px;
+transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenerdor_login_register form{
+width: 100%;
+padding: 80px 20px;
+background: #fff ;
+position: absolute;
+border-radius: 20px;
+
+}
+
+
+.contenerdor_login_register form h2{
+font-size: 30px;
+text-align: center;
+margin-bottom: 20px;
+color: #46a2fd;
+
+
+}
+
+.contenerdor_login_register form input{
+width: 100%;
+margin-top: 20px;
+padding: 10px;
+border: none;
+background: #f2f2f2;
+font-size: 16px;
+outline: none;
+}
+.contenerdor_login_register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 14px;
+    background: #46a2fd;
+    color: white;
+    border:none;
+    cursor: pointer;
+}  
+
+
+.formulario_login{
+    opacity: 1;
+    display: block;
+
+}
+.formulario_register{
+display: none;
+}
+
+/*responsive*/
+
+
+@media (max-width: 850px) {
+    
+    main{
+        margin-top: 50px;
+    }
+
+    .caja_trasera{
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+}
+.caja_trasera div{
+    margin: 0;
+    position: absolute;
+
+}
+
+/*formulario*/
+.contenerdor_login_register{
+    top: -10px;
+    left: -5px;
+    margin: auto;
+
+}
+.caja_trasera_register form{
+position: relative;
+
+}
+
+
+}
